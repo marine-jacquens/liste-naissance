@@ -116,9 +116,6 @@ html, body{
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
 }
 
 .navbar a {
@@ -129,7 +126,6 @@ html, body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    
 }
 
 .active {
@@ -334,6 +330,7 @@ td {
 /*Flipcard*/
 
 .flip-card {
+    position:relative;
     background-color: #333;
     width: 200px;
     height: 250px;
@@ -370,6 +367,11 @@ td {
     border-radius:30px;
 }
 
+.flip-card-front img{
+    border-radius:30px;
+   height:250px;
+}
+
 .flip-card-back {
     position:relative;
     background-color: #B34767;
@@ -390,36 +392,35 @@ td {
     max-width:50%;
 }
 
-.flip-card-front h3{
-    color:white;
-    text-shadow:2px 2px 2px #333;
-    font-size:15px;
-} /*à supprimer*/
-
-.flip-card-front img{
-    border-top-right-radius:30px;
-    border-top-left-radius:30px;
+.flip-card-back a img{
+    transition: drop-shadow 0.2s ease;
 }
+.flip-card-back a img:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+}
+
 
 /*Etiquettes*/
 
 .label {
+    position:absolute;
+    right:10%;
+    bottom:1%;
     color: white;
     padding: 8px;
     font-family: Arial;
     border-radius:30px;
 }
 
-.success {background-color: #4CAF50;} /* Green */
-.info {background-color: #2196F3;} /* Blue */
-.warning {background-color: #ff9800;} /* Orange */
-.danger {background-color: #f44336;} /* Red */ 
-.other {background-color: #e7e7e7; color: black;} /* Gray */ 
+.offert {background-color: lightslategray;} /* Green */
+.selection {background-color: #2196F3;} /* Blue */
+.secondaire {background-color: #ff9800;} /* Orange */
+.urgent {background-color: #f44336;} /* Red */ 
 
 /*
 <span class="label success">Secondaire</span>
-<span class="label warning">Déjà Sélectionné</span>
-<span class="label danger">Urgent</span>
+<span class="label warning">Offrir</span>
+<span class="label danger">Offrir</span>
 <span class="label info">Déja acheté</span>
 
 */
