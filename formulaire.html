@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="liste.css"media="all" />
+        <meta name="author" content="Marine Jacquens">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Formulaire</title>
+    </head>
+    <body class="form-body">
+        <header>
+            <div class="image-container">
+                    <div class="cover"><img src="ressources/birthday-list1.jpg" alt="fond d'écran chaussures"></div>
+                    <div class="text">LISTE DE NAISSANCE</div>
+            </div>
+            <div class="navbar" id="mynavbar" >
+                <a href="liste.html" class="active">Home</a>
+            </div>
+        </header>
+        <main class="main-formulaire">
+            <div class="formulaire">
+                <div class="btitre"><h1>Ajoutez un nouveau produit<span>Ce formulaire permet d'insérer manuellement un nouvel encart dans la liste de naissance</span></h1></div>
+                <form action="liste.html">
+                    <div class="form-back">
+                        <div class="label-position">
+                            <label>Intitulé objet<span> *</span></label>
+                        </div>
+                        <div class="input-position">
+                            <input type="text" name="field1" required autocomplete="on" autofocus/>
+                        </div>
+                        <div class="label-position">
+                            <label for="introduction">Description</label>
+                        </div>
+                        <div>
+                            <textarea id="description" name="description" placeholder="Taille, couleur ..." autocomplete="on"></textarea>
+                        </div>
+                        <div class="label-position">
+                            <label for="myfile">Sélectionnez une image du produit<span> *</span></label><br>
+                        </div>
+                        <div>
+                            <input type="file" id="myfile" name="myfile" required>
+                        </div>
+                        <div class="label-position">
+                            <label for="url">Saisissez un lien direct vers la boutique en ligne<span> * </span><span style="color:#888;font-size:13px;font-style:italic;">(Le lien sera ultérieurement lié au logo de la marque)</span></label>
+                        </div>
+                        <div>
+                            <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+                        </div>
+                        <div class="label-position">
+                            <label>Choisissez une étiquette en fonction du type de besoin<span> *</span>
+                            </label>
+                        </div>
+                        <div class="input-position">
+                            <input type="radio" id="urgent" name="etiquette-label" value="urgent" required autocomplete="on">
+                            <label for="urgent">Urgent</label>
+                            <input type="radio" id="secondaire" name="etiquette-label" value="secondaire">
+                            <label for="secondaire">Secondaire</label>
+                        </div>
+                        <div  class="label-position">
+                            <label>Sélectionnez la catégorie du produit :<span> *</span></label>
+                        </div>
+                        <div>
+                            <select name="categorie" size="4" required>
+                                <optgroup label="La chambre de bébé">
+                                    <option value="meuble">Meuble & Gadget</option>
+                                    <option value="literie">Literie</option>
+                                    <option value="linge">Linge & accessoire</option>
+                                    <option value="jouet">Jouet</option>
+                                </optgroup>
+                                <optgroup label="Bébé et le bain">
+                                    <option value="meuble">Meuble & Gadget</option>
+                                    <option value="linge">Linge de bain</option>
+                                    <option value="produit">Produit de soin et accessoire</option>
+                                    <option value="jouet">Jouet du bain</option>
+                                </optgroup>
+                                <optgroup label="Le repas de bébé">
+                                    <option value="perroquet">Kit Accesoire & Gadget</option>
+                                </optgroup>
+                                <optgroup label="Sorties avec bébé">
+                                    <option value="perroquet">Transporter bébé</option>
+                                    <option value="macaw">Vêtement</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="button-section">
+                            <div>
+                                <input type="submit" name="Sign Up" class="valider"/>
+                            </div>
+                            <div class="controls">
+                                <input type="reset" value="Réinitialiser" class="valider">
+                            </div>
+                        </div>
+                        <p><span>*</span> Champs obligatoires</p>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
