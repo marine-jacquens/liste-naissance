@@ -316,8 +316,8 @@ tfoot a:hover{
 
 .flip-card-back {
     position:relative;
-    background-color: #B34767;
-    color: white;
+    background-color: #E9E3E3;
+    color: black;
     font-size:13px;
     transform: rotateY(180deg);
     border-radius:30px;
@@ -331,15 +331,14 @@ tfoot a:hover{
 
 .flip-card-back img{
     position:absolute;
-    right:25%;
-    max-width:50%;
+    left:8%;
 }
 
 .flip-card-back a img{
     transition: drop-shadow 0.2s ease;
 }
 .flip-card-back a img:hover {
-    filter: drop-shadow(0 0 0.75rem white);
+    filter: drop-shadow(0 0 0.75rem #B34767);
 }
 
 
