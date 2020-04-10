@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="liste.css"media="all" />
         <meta name="author" content="Marine Jacquens">
         <title>Ma liste de naissance</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--arrow-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><!--arrow-->
         <meta name="viewport" content="width=device-width, initial-scale=1"><!--étiquettes-->
     </head>
     <body>
@@ -14,7 +14,8 @@
                     <div class="cover"><img src="ressources/birthday-list1.jpg" alt="fond d'écran chaussures"></div>
                     <div class="text">LISTE DE NAISSANCE</div>
             </div>
-            <div class="navbar">
+            <div class="navbar" id="mynavbar" >
+                <a href="formulaire.html" class="active">Formulaire</a>
                 <div class="dropdown">
                     <button class="dropbtn">La chambre de bébé
                     </button>
@@ -50,8 +51,18 @@
                         <a href="#sortie-vêtement">Vêtements</a>
                     </div>
                 </div>
-                <a href="formulaire.html">Formulaire</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("mynavbar");
+                  if (x.className === "navbar") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "navbar";
+                  }
+                }
+            </script>
         </header>
         <main>
             <div class="section1" id="section1">
