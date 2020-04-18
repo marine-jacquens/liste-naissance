@@ -168,7 +168,7 @@ html, body{
     background-color:white;
 }
 
-@media (max-width:799px) {
+@media (max-width:1200px) {
   .section1{
     flex-wrap: wrap;
   }
@@ -254,7 +254,7 @@ td {
     background-color:#FFFFFF;
 }
 
-@media (max-width:799px) {
+@media (max-width:1200px) {
   td{
     display: table-row;
   }
